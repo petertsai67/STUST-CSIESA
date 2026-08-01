@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>南臺科技大學資訊工程系 新生入學待辦清單</title>
+<style>
+  /* 沿用開發小組討論決議的視覺樣式[cite: 3] */
+  :root{
+    --navy:#0f2a4a; --blue:#1f6fb2; --teal:#1a8f8f; --bg:#f6f8fb;
+    --card:#ffffff; --text:#1c2733; --muted:#5b6b7c; --border:#e1e7ee;
+    --warn-bg:#fff6e8; --warn-border:#e8b34d; --ok-bg:#eaf7f0; --ok-border:#3aa66b;
+    --risk-bg:#fdecec; --risk-border:#d95b5b;
+  }
+  *{box-sizing:border-box;}
+  body{
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    background:var(--bg); color:var(--text); margin:0; line-height:1.75; font-size:15.5px;
+  }
+  .wrap{max-width:920px; margin:0 auto; padding:40px 28px 100px;}
+  header.hero{
+    background:linear-gradient(135deg,var(--navy),var(--blue));
+    color:#fff; border-radius:16px; padding:36px 32px; margin-bottom:32px;
+  }
+  header.hero .tag{display:inline-block; background:rgba(255,255,255,.15); padding:4px 12px; border-radius:999px; font-size:12.5px; letter-spacing:.5px; margin-bottom:14px;}
+  header.hero h1{font-size:26px; margin:0 0 10px; line-height:1.4;}
+  header.hero p{margin:0; opacity:.9; font-size:14.5px;}
+  .meta-row{display:flex; gap:18px; margin-top:18px; flex-wrap:wrap; font-size:13px; opacity:.85;}
+  section{margin-bottom:36px;}
+  h2.section-title{
+    font-size:20px; color:var(--navy); border-left:6px solid var(--blue);
+    padding:6px 0 6px 14px; margin:0 0 18px;
+  }
+  h3{font-size:16.5px; color:var(--navy); margin:24px 0 10px;}
+  p{margin:8px 0;}
+  .card{background:var(--card); border:1px solid var(--border); border-radius:12px; padding:22px 24px; margin-bottom:16px; box-shadow:0 1px 3px rgba(15,42,74,.04);}
+  ul{padding-left:22px; margin:8px 0;}
+  li{margin:4px 0;}
+  .badge{display:inline-block; font-size:11.5px; padding:2px 9px; border-radius:999px; margin-right:6px; font-weight:600;}
+  .badge.checked{background:var(--ok-bg); color:#1f7a4a; border:1px solid var(--ok-border);}
+  .badge.risk{background:var(--risk-bg); color:#a83a3a; border:1px solid var(--risk-border);}
+  .badge.info{background:#eef3fa; color:var(--blue); border:1px solid #c9dcf0;}
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  @media (max-width:640px){.grid2{grid-template-columns:1fr;}}
+  .checkbox-list{list-style:none; padding:0; margin:0;}
+  .checkbox-list li{display:flex; align-items:center; margin-bottom:10px; font-size:14.5px;}
+  .checkbox-list input{margin-right:10px; transform:scale(1.2);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <span class="tag">南臺科技大學 資訊工程系學會</span>
+    <h1>115學年度 新生入學待辦清單</h1>
+    <p>歡迎來到南臺資工！我是系學會副會長 Tony王柏陽。為了讓學弟妹們能順利完成入學手續，我們特別準備了這個專屬網站，請依照自己的身分與時程完成代辦事項！</p>
+    <div class="meta-row">
+      <span>最後更新日期: 2026/08/01</span>
+      <span>資料來源: 教務處與學務處公告</span>
+    </div>
+  </header>
+
+  <section id="phase1">
+    <h2 class="section-title">一、行政資料與繳費時程</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3>新生學籍資料登錄</h3>
+        <span class="badge risk">8/4 前截止</span><span class="badge info">五專聯免等部分新生適用</span>
+        <p>7/30~8/4：登入新生學籍系統，填寫基本資料、上傳照片並確認資料。[cite: 4]</p>
+      </div>
+      <div class="card">
+        <h3>學雜費繳費單下載與繳費</h3>
+        <span class="badge risk">依管道不同</span>
+        <p>8/3~9/4：日間四技、五專等新生適用。[cite: 4]</p>
+        <p>8/24~9/4：日二技、四技技優、甄選、聯登等適用。[cite: 4]</p>
+        <p>8/28~9/4：四技單獨招生等適用。[cite: 4]</p>
+        <p style="font-size:13px; color:var(--muted);">*學校不寄紙本，請自行上網下載。[cite: 4]</p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <h3>8月底前必辦事項</h3>
+      <ul class="checkbox-list">
+        <li><input type="checkbox"> <strong>校務帳號與學生信箱：</strong>啟用南臺校務帳號及學生 Outlook 信箱，之後選課、校務通知等都會使用。[cite: 4]</li>
+        <li><input type="checkbox"> <strong>新生自傳：</strong>進入新生自傳系統完成填寫（依學校規定）。[cite: 4]</li>
+        <li><input type="checkbox"> <strong>五專補助與減免：</strong>五專新生填寫前三年免學費補助調查；符合資格者辦理學雜費減免。[cite: 4]</li>
+        <li><input type="checkbox"> <strong>就學貸款：</strong>有需求者辦理臺灣銀行對保，再依南臺規定完成校內程序。[cite: 4]</li>
+        <li><input type="checkbox"> <strong>兵役資料：</strong>男學生依身分完成兵役資料、緩徵等相關程序。[cite: 4]</li>
+        <li><input type="checkbox"> <strong>新生體檢與訓練：</strong>依學校公告時間地點完成體檢並參加新生訓練。[cite: 4]</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="phase2">
+    <h2 class="section-title">二、資工系選課與硬體準備</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3>第一階段選課</h3>
+        <span class="badge checked">8/27 09:00 ~ 9/1 23:00</span>
+        <p>四技新生：登入選課系統，先確認資訊工程系課程時序，再進行處理。[cite: 4]</p>
+      </div>
+      <div class="card">
+        <h3>第二階段選課與開學</h3>
+        <span class="badge checked">9/3 09:00 ~ 9/6 23:00</span>
+        <p>補選、調整課程，並確認正式課表。[cite: 4]</p>
+        <p><strong>9/7 正式上課：</strong>確認正式課表、教室及上課時間。[cite: 4]</p>
+      </div>
+    </div>
+    <div class="card">
+      <h3>💻 筆電與桌機規格建議</h3>
+      <p>身為資工系的一員，擁有一台合適的電腦非常重要。若平常休閒時喜歡玩《城市天際線二》等具有高效能運算與圖形渲染需求的遊戲，建議可將硬體規格抓在 <strong>R5 5600 處理器搭配 RTX 2060 獨立顯卡</strong>以上的等級。這樣的配置不僅能順跑多數大作，應付系上各種程式編譯與數位邏輯設計環境也都綽綽有餘！</p>
+    </div>
+  </section>
+
+  <section id="phase3">
+    <h2 class="section-title">三、住宿與交通車位申請</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3>宿舍繳費與候補</h3>
+        <span class="badge checked">8/20~8/26 繳費</span>
+        <p>住宿新生：宿舍中籤後下載繳費單並完成住宿費繳費。[cite: 4]</p>
+        <p><strong>8/27 宿舍候補：</strong>未中籤者依候補順序等待床位。[cite: 4]</p>
+      </div>
+      <div class="card">
+        <h3>宿舍入住與校外租屋</h3>
+        <span class="badge checked">8/29~8/30 入住</span>
+        <p>住宿新生到指定宿舍辦理入住。[cite: 4]</p>
+        <p>外宿生：8月底前確認租金、水電、押金、網路與租約（南臺有校外租屋資訊）。[cite: 4]</p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <h3>新生停車申請</h3>
+      <span class="badge checked">9/1 10:00起申請</span><span class="badge checked">9/1~9/6 資料確認</span>
+      <p>新生、轉學生（汽機車依校方規定）：啟用校務帳號後登入學生停車申請系統，填寫車牌資料、申請並完成繳費。[cite: 4] 申請後請記得確認繳費完成及車牌資料正確。[cite: 4]</p>
+      <p style="font-size:14px; color:var(--muted);">💡 交通安全小提醒：有騎機車通勤的同學，無論是普通白牌速克達，還是騎乘 CBR500R、MT-07 等黃紅牌重機或檔車，入學前都可以先探勘好學校周邊的專屬車位與評價優良的保養廠！</p>
+    </div>
+  </section>
+
+  <section id="phase4">
+    <h2 class="section-title">四、住宿生專屬：超詳盡行李確認清單</h2>
+    <div class="card">
+      <p style="margin-bottom:15px; color:var(--muted);">準備入住前，請先確認：宿舍中籤結果、是否完成繳費、房號床位、入住日期與地點。並了解宿舍的床墊尺寸、公共衛浴與洗衣設備、冷氣冰箱，以及電器、延長線的使用與違禁品規定。[cite: 4]</p>
+      
+      <div class="grid2">
+        <div>
+          <h4>🛏️ 寢具與衣物</h4>
+          <ul class="checkbox-list">
+            <li><input type="checkbox"> 床包、枕頭、枕套[cite: 4]</li>
+            <li><input type="checkbox"> 棉被/薄被、被套[cite: 4]</li>
+            <li><input type="checkbox"> 日常衣服、內衣褲、襪子[cite: 4]</li>
+            <li><input type="checkbox"> 外套、運動服、睡衣[cite: 4]</li>
+            <li><input type="checkbox"> 拖鞋、鞋子、雨傘[cite: 4]</li>
+            <li><input type="checkbox"> 已預購寢具者確認領取方式（依學生會/廠商公告）[cite: 4]</li>
+          </ul>
+        </div>
+        <div>
+          <h4>🚿 衛浴與洗衣用品</h4>
+          <ul class="checkbox-list">
+            <li><input type="checkbox"> 毛巾、浴巾、牙刷、牙膏[cite: 4]</li>
+            <li><input type="checkbox"> 洗面乳、洗髮精、沐浴乳[cite: 4]</li>
+            <li><input type="checkbox"> 梳子、吹風機、衛生用品[cite: 4]</li>
+            <li><input type="checkbox"> 洗衣精/粉/球、臉盆[cite: 4]</li>
+            <li><input type="checkbox"> 衣架、曬衣夾、洗衣袋[cite: 4]</li>
+          </ul>
+        </div>
+        <div>
+          <h4>📦 房間收納與日常</h4>
+          <ul class="checkbox-list">
+            <li><input type="checkbox"> 衣物收納袋/箱、小型置物盒[cite: 4]</li>
+            <li><input type="checkbox"> 掛勾、垃圾袋、抹布[cite: 4]</li>
+            <li><input type="checkbox"> 衛生紙、濕紙巾、簡單清潔用品[cite: 4]</li>
+            <li><input type="checkbox"> 延長線/延長插座（先確認宿舍規定）[cite: 4]</li>
+            <li><input type="checkbox"> 水壺/水杯、環保袋/購物袋[cite: 4]</li>
+            <li><input type="checkbox"> 個人保養品、常用藥品、急救包[cite: 4]</li>
+          </ul>
+        </div>
+        <div>
+          <h4>💻 學習與重要物品</h4>
+          <ul class="checkbox-list">
+            <li><input type="checkbox"> 筆電/平板及充電器[cite: 4]</li>
+            <li><input type="checkbox"> 滑鼠、耳機、隨身碟[cite: 4]</li>
+            <li><input type="checkbox"> 文具、筆記本[cite: 4]</li>
+            <li><input type="checkbox"> 身分證、學生證（已領取者）[cite: 4]</li>
+            <li><input type="checkbox"> 宿舍入住相關資料/通知[cite: 4]</li>
+            <li><input type="checkbox"> 手機充電線、充電頭[cite: 4]</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
